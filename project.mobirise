@@ -1,0 +1,1721 @@
+{
+  "settings": {
+    "currentPage": "Limpias.html",
+    "theme": {
+      "name": "parkm5",
+      "title": "ParkM5",
+      "styling": {
+        "primaryColor": "#ec1a1a",
+        "secondaryColor": "#FF4712",
+        "successColor": "#FFFFFF",
+        "infoColor": "#0000ff",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Spartan",
+        "display1Font": "Spartan",
+        "display1Size": 3.75,
+        "display2Font": "Spartan",
+        "display2Size": "3",
+        "display5Font": "Spartan",
+        "display5Size": 1.3,
+        "display7Font": "Work Sans",
+        "display7Size": "1.6",
+        "display4Font": "Spartan",
+        "display4Size": 0.875,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "titlePreset": "Beer Festival",
+      "nameSelectPreset": "beer-festival",
+      "presetSourceTheme": "parkm5",
+      "additionalSetColors": [
+        "#ec1a1a",
+        "#0000ff",
+        "#18ddf3"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "name": "GAPA#3",
+    "versionFirst": "5.8.14",
+    "siteFonts": [
+      {
+        "css": "'Work Sans', sans-serif",
+        "name": "Work Sans",
+        "url": "https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "imageResize": true,
+    "uniqCompNum": 26,
+    "versionPublish": "5.8.14",
+    "screenshot": "screenshot.png",
+    "favicon": false,
+    "mbrsiteDomain": "vm4wmztgkk",
+    "usedWebp": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Pactos Con Lucifer",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".text": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "margin": "0 0 22px 0",
+              "letter-spacing": ".13em",
+              "color": "#ec1a1a",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "margin": "0 0 33px 0",
+              "color": "#ffffff"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".image-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "@media (max-width: 992px)": {
+                "margin-top": "2rem"
+              },
+              "img": {
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              },
+              ".image-absolute": {
+                "position": "absolute",
+                "top": "20px",
+                "right": "23%",
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                },
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "@media (max-width: 425px)": {
+                  "display": "none"
+                }
+              }
+            },
+            ".row:hover img": {
+              "transform": "rotate(0deg)"
+            },
+            ".mbr-section-title DIV": {
+              "text-align": "left"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Header\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#ec1a1a\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/pactos-316-768x512.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6 col-md-12 text\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                        <b>PACTOS CON EL DIABLO&nbsp;</b></h3>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><b>¿Como cambiaria su situación si pudieras resolver todos tus problemas?\n</b><div><b>\n</b></div><div><b>Si nos contactas ahora mismo le mostraremos como puede tener una nueva vida haciendo un poderoso pacto con el diablo.</b></div></h1>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR&nbsp; AHORA!&nbsp;</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img class=\"image-absolute\" src=\"@PROJECT_PATH@/assets/images/pactos-95-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                    <img src=\"@PROJECT_PATH@/assets/images/pactos-316-712x475.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "t3PnQc2nNj",
+          "_anchor": "header3-1",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "max-width": "800px",
+              "margin": "0 auto 21px auto",
+              "letter-spacing": ".13em",
+              "color": "#FF4712",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "max-width": "800px",
+              "margin": "0 auto 26.5px auto",
+              "color": "#FAFAFA"
+            },
+            ".mbr-section-btn": {
+              "max-width": "800px",
+              "margin": "0 auto"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "margin-top": "0",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".mbr-section-title, .mbr-section-btn": {
+              "text-align": "center"
+            }
+          },
+          "_name": "info1",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"info1\" group=\"Features\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/background5.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n            <div class=\"col-12 col-lg-12\">\n                <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\">\n                    <b>NEW PARK</b></h3>\n                <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>contactenos&nbsp; y&nbsp; le mostraremos los secretos que usa la élite mundial para el éxito.</b></h2>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR AHORA!</a> <a class=\"btn btn-info\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn\"></span>LLAMAR AHORA!&nbsp;</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "t3PnW1iP4u",
+          "_anchor": "info1-4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".text": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "margin": "0 0 22px 0",
+              "letter-spacing": ".13em",
+              "color": "#ec1a1a",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "margin": "0 0 33px 0",
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".image-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "@media (max-width: 992px)": {
+                "margin-top": "2rem"
+              },
+              "img": {
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              },
+              ".image-absolute": {
+                "position": "absolute",
+                "top": "20px",
+                "right": "23%",
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                },
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "@media (max-width: 425px)": {
+                  "display": "none"
+                }
+              }
+            },
+            ".row:hover img": {
+              "transform": "rotate(0deg)"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Header\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#ec1a1a\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/pactos-315-768x512.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#000000\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#150c0a\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6 col-md-12 text\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>MAESTROS PODEROSOS</b></h3>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><b>Usted no tendrá ningún riesgo al hacer este tipo de ritual, somos un grupo de poderosos brujos, santeros y chamanes con más de 40 años de experiencia.&nbsp;</b></h1>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR AHORA!</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img class=\"image-absolute\" src=\"@PROJECT_PATH@/assets/images/pactos-342-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                    <img src=\"@PROJECT_PATH@/assets/images/pactos-342-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "header3-0",
+          "_isUserblock": true,
+          "_cid": "tHzX7ct1kC",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "padding": "0",
+                "@media (max-width: 992px)": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".container": {
+              "@media (max-width: 992px)": {
+                "padding": "0"
+              }
+            },
+            ".title-wrapper": {
+              "padding": "0 16px",
+              ".mbr-section-title": {
+                "margin-bottom": "0"
+              },
+              ".mbr-text": {
+                "margin": "25px 0 0 0"
+              },
+              ".mbr-section-btn": {
+                "margin-top": "100px",
+                "@media (max-width: 992px)": {
+                  "margin-top": "40px"
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-section-title, .mbr-section-btn": {
+              "text-align": "center",
+              "color": "#ec1a1a"
+            }
+          },
+          "_name": "header1",
+          "_sourceTheme": "churchm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1 churchm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/pactos-340-512x512.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#fdfcfa\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/293747805\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/churchm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"title-wrapper\">\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Pactos Iluminati</b></h1>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Los Illuminati son una organización de élite de líderes mundiales, autoridades empresariales, innovadores, artistas y otros miembros influyentes de este planeta.\n<br>\n<br>Contáctese con el Maestro Superior y si cumple los requisitos usted podrá ser parte de esta comunidad.</p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR AHORA!&nbsp;</a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tHA0JWlRsI",
+          "_anchor": "header1-d",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".text": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "margin": "0 0 22px 0",
+              "letter-spacing": ".13em",
+              "color": "#ec1a1a"
+            },
+            ".mbr-section-title": {
+              "margin": "0 0 33px 0",
+              "color": "#ffffff"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".image-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "@media (max-width: 992px)": {
+                "margin-top": "2rem"
+              },
+              "img": {
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              },
+              ".image-absolute": {
+                "position": "absolute",
+                "top": "20px",
+                "right": "23%",
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                },
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "@media (max-width: 425px)": {
+                  "display": "none"
+                }
+              }
+            },
+            ".row:hover img": {
+              "transform": "rotate(0deg)"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Header\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#ec1a1a\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5-1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6 col-md-12 text\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                        <b>PACTOS POR FAMA&nbsp;</b></h3>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><b>Podrás ser reconocido en lo que siempre soñaste, haciendo una pequeña ofrenda a nuestro padre lucifer.</b></h1>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTARAHORA!</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img class=\"image-absolute\" src=\"@PROJECT_PATH@/assets/images/pactos-331-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                    <img src=\"@PROJECT_PATH@/assets/images/pactos-331-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "header3-3",
+          "_isUserblock": true,
+          "_cid": "tHzY2syTBI",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".text": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "margin": "0 0 22px 0",
+              "letter-spacing": ".13em",
+              "color": "#ec1a1a"
+            },
+            ".mbr-section-title": {
+              "margin": "0 0 33px 0",
+              "color": "#ffffff"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".image-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "@media (max-width: 992px)": {
+                "margin-top": "2rem"
+              },
+              "img": {
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              },
+              ".image-absolute": {
+                "position": "absolute",
+                "top": "20px",
+                "right": "23%",
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                },
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "@media (max-width: 425px)": {
+                  "display": "none"
+                }
+              }
+            },
+            ".row:hover img": {
+              "transform": "rotate(0deg)"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Header\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#ec1a1a\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/pactos-330-512x512.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6 col-md-12 text\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>VENDE TU ALMA POR DINERO</b></h3>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><b>Podrás tener todas las riquezas y lujos que siempre soñaste, haciendo una pequeña ofrenda a nuestro padre lucifer.</b></h1>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR AHORA!</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img class=\"image-absolute\" src=\"@PROJECT_PATH@/assets/images/pactos-330-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                    <img src=\"@PROJECT_PATH@/assets/images/pactos-330-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "header3-4",
+          "_isUserblock": true,
+          "_cid": "tHzY2MjEsX",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "Amarres.html": {
+      "settings": {
+        "title": "Amarres de Amor",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": "1"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".text": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "margin": "0 0 22px 0",
+              "letter-spacing": ".13em",
+              "color": "#ec1a1a",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "margin": "0 0 33px 0",
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".image-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "@media (max-width: 992px)": {
+                "margin-top": "2rem"
+              },
+              "img": {
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              },
+              ".image-absolute": {
+                "position": "absolute",
+                "top": "20px",
+                "right": "23%",
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                },
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "@media (max-width: 425px)": {
+                  "display": "none"
+                }
+              }
+            },
+            ".row:hover img": {
+              "transform": "rotate(0deg)"
+            },
+            ".mbr-section-title DIV": {
+              "text-align": "left"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Header\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#ec1a1a\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/amor-93-728x408.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6 col-md-12 text\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                        <b>AMMARES DE AMOR&nbsp;</b></h3>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><b>Si su relación se ha ido deteriorando o el amor se ha debilitado es momento que le des una solución y nosotros podemos ayudarte, comunícate con nosotros y lograrás activar nuevamente el deseo emocional de esa persona con quien deseas estar nuevamente</b></h1>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR&nbsp; AHORA!&nbsp;</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img class=\"image-absolute\" src=\"@PROJECT_PATH@/assets/images/parejas-71-512x768.jpg\" alt=\"Mobirise Website Builder\">\n                    <img src=\"@PROJECT_PATH@/assets/images/parejas-71-512x768.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_cid": "tHAr9TL9DR",
+          "_anchor": "header3-e",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "max-width": "800px",
+              "margin": "0 auto 21px auto",
+              "letter-spacing": ".13em",
+              "color": "#FF4712",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "max-width": "800px",
+              "margin": "0 auto 26.5px auto",
+              "color": "#FAFAFA"
+            },
+            ".mbr-section-btn": {
+              "max-width": "800px",
+              "margin": "0 auto"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "margin-top": "0",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".mbr-section-title, .mbr-section-btn": {
+              "text-align": "center"
+            }
+          },
+          "_name": "info1",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"info1\" group=\"Features\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/background5.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n            <div class=\"col-12 col-lg-12\">\n                <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\">\n                    <b>NEW PARK</b></h3>\n                <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>comunícate y obtén el amor de la persona que deseas, te ayudamos a conseguirlo</b></h2>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR AHORA!</a> <a class=\"btn btn-info\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn\"></span>LLAMAR AHORA!&nbsp;</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tHAr9UeqsC",
+          "_anchor": "info1-f",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".text": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "margin": "0 0 22px 0",
+              "letter-spacing": ".13em",
+              "color": "#ec1a1a",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "margin": "0 0 33px 0",
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".image-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "@media (max-width: 992px)": {
+                "margin-top": "2rem"
+              },
+              "img": {
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              },
+              ".image-absolute": {
+                "position": "absolute",
+                "top": "20px",
+                "right": "23%",
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                },
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "@media (max-width: 425px)": {
+                  "display": "none"
+                }
+              }
+            },
+            ".row:hover img": {
+              "transform": "rotate(0deg)"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Header\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#ec1a1a\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/amor-133-resultado-408x728.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#000000\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#150c0a\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6 col-md-12 text\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>¿Sientes Que Tu Pareja Ha Perdido El Deseo De Estar Contigo?</b></h3>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><b>Fortalecemos los lazos de unión para que tu relación sea más duradera, no permitas que la relación se deteriore</b></h1>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR AHORA!</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img class=\"image-absolute\" src=\"@PROJECT_PATH@/assets/images/amor-157-resultado-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                    <img src=\"@PROJECT_PATH@/assets/images/amor-157-resultado-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_isUserblock": true,
+          "_cid": "tHAr9UvwVH",
+          "_anchor": "header3-g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "padding": "0",
+                "@media (max-width: 992px)": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".container": {
+              "@media (max-width: 992px)": {
+                "padding": "0"
+              }
+            },
+            ".title-wrapper": {
+              "padding": "0 16px",
+              ".mbr-section-title": {
+                "margin-bottom": "0"
+              },
+              ".mbr-text": {
+                "margin": "25px 0 0 0"
+              },
+              ".mbr-section-btn": {
+                "margin-top": "100px",
+                "@media (max-width: 992px)": {
+                  "margin-top": "40px"
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-section-title, .mbr-section-btn": {
+              "text-align": "center",
+              "color": "#ec1a1a"
+            }
+          },
+          "_name": "header1",
+          "_sourceTheme": "churchm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1 churchm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/amor-162-resultado-672x448.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#fdfcfa\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/293747805\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/churchm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"title-wrapper\">\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>MAESTROS PODEROSOS\n</b><div><b><br></b></div></h1>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Usted no tendrá ningún riesgo al hacer este tipo de ritual, somos un grupo de poderosos brujos, santeros y chamanes con más de 40 años de experiencia.&nbsp;</p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR AHORA!&nbsp;</a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tHAr9UMkl3",
+          "_anchor": "header1-h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".text": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "margin": "0 0 22px 0",
+              "letter-spacing": ".13em",
+              "color": "#ec1a1a"
+            },
+            ".mbr-section-title": {
+              "margin": "0 0 33px 0",
+              "color": "#ffffff"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".image-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "@media (max-width: 992px)": {
+                "margin-top": "2rem"
+              },
+              "img": {
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              },
+              ".image-absolute": {
+                "position": "absolute",
+                "top": "20px",
+                "right": "23%",
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                },
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "@media (max-width: 425px)": {
+                  "display": "none"
+                }
+              }
+            },
+            ".row:hover img": {
+              "transform": "rotate(0deg)"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Header\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#ec1a1a\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5-1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6 col-md-12 text\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                        <b>Endulzamientos\n</b><div><b><br></b></div></h3>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><b>Recupera a la persona que tanto extrañas y amas con el alma, todos merecemos una oportunidad de volver a conquistar el amor que perdimos y lograr estar bien con esa persona que amamos\n</b><div><b><br></b></div></h1>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTARAHORA!</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img class=\"image-absolute\" src=\"@PROJECT_PATH@/assets/images/amor-145-resultado-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                    <img src=\"@PROJECT_PATH@/assets/images/amor-145-resultado-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_isUserblock": true,
+          "_cid": "tHAr9V1JKA",
+          "_anchor": "header3-i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".text": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "margin": "0 0 22px 0",
+              "letter-spacing": ".13em",
+              "color": "#ec1a1a"
+            },
+            ".mbr-section-title": {
+              "margin": "0 0 33px 0",
+              "color": "#ffffff"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".image-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "@media (max-width: 992px)": {
+                "margin-top": "2rem"
+              },
+              "img": {
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              },
+              ".image-absolute": {
+                "position": "absolute",
+                "top": "20px",
+                "right": "23%",
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                },
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "@media (max-width: 425px)": {
+                  "display": "none"
+                }
+              }
+            },
+            ".row:hover img": {
+              "transform": "rotate(0deg)"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Header\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#ec1a1a\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/amor-139-resultado-512x512.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6 col-md-12 text\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>UNIÓN DE PAREJAS&nbsp;</b></h3>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><b>Un buen hechizo de amor puede hacer que recuperes el amor de esa persona, para que te ame como tú lo haces</b></h1>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR AHORA!</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img class=\"image-absolute\" src=\"@PROJECT_PATH@/assets/images/parejas-72-512x768.jpg\" alt=\"Mobirise Website Builder\">\n                    <img src=\"@PROJECT_PATH@/assets/images/parejas-72-512x768.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_isUserblock": true,
+          "_cid": "tHAr9VfB4T",
+          "_anchor": "header3-j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "Limpias.html": {
+      "settings": {
+        "title": "Limpias Espirituales&nbsp;",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": "2"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".text": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "margin": "0 0 22px 0",
+              "letter-spacing": ".13em",
+              "color": "#18ddf3",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "margin": "0 0 33px 0",
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".image-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "@media (max-width: 992px)": {
+                "margin-top": "2rem"
+              },
+              "img": {
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              },
+              ".image-absolute": {
+                "position": "absolute",
+                "top": "20px",
+                "right": "23%",
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                },
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "@media (max-width: 425px)": {
+                  "display": "none"
+                }
+              }
+            },
+            ".row:hover img": {
+              "transform": "rotate(0deg)"
+            },
+            ".mbr-section-title DIV": {
+              "text-align": "left"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Header\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#18ddf3\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/limpias-235-512x512.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6 col-md-12 text\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                        <b>LIMPIAS ESPIRITUALES</b></h3>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><b>Libérate de la energía negativa y encuentra el equilibrio emocional y espiritual que necesitas</b></h1>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR&nbsp; AHORA!&nbsp;</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img class=\"image-absolute\" src=\"@PROJECT_PATH@/assets/images/limpias-2-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                    <img src=\"@PROJECT_PATH@/assets/images/limpias-2-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_cid": "tHAuSjcUCl",
+          "_anchor": "header3-k",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "max-width": "800px",
+              "margin": "0 auto 21px auto",
+              "letter-spacing": ".13em",
+              "color": "#FF4712",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "max-width": "800px",
+              "margin": "0 auto 26.5px auto",
+              "color": "#FAFAFA"
+            },
+            ".mbr-section-btn": {
+              "max-width": "800px",
+              "margin": "0 auto"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "margin-top": "0",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".mbr-section-title, .mbr-section-btn": {
+              "text-align": "center"
+            }
+          },
+          "_name": "info1",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"info1\" group=\"Features\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/background5.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n            <div class=\"col-12 col-lg-12\">\n                <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\">\n                    <b>NEW PARK</b></h3>\n                <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>comunícate y obtén la tranquilidad y bienestar que tanto estas buscando!</b></h2>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR AHORA!</a> <a class=\"btn btn-info\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn\"></span>LLAMAR AHORA!&nbsp;</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tHAuSjEdSs",
+          "_anchor": "info1-l",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".text": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "margin": "0 0 22px 0",
+              "letter-spacing": ".13em",
+              "color": "#18ddf3",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "margin": "0 0 33px 0",
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".image-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "@media (max-width: 992px)": {
+                "margin-top": "2rem"
+              },
+              "img": {
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              },
+              ".image-absolute": {
+                "position": "absolute",
+                "top": "20px",
+                "right": "23%",
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                },
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "@media (max-width: 425px)": {
+                  "display": "none"
+                }
+              }
+            },
+            ".row:hover img": {
+              "transform": "rotate(0deg)"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Header\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#18ddf3\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/amor-133-resultado-408x728.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#000000\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#150c0a\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6 col-md-12 text\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>Encuentra la Renovación y El Rejuvenecimiento a Través De Nuestras Limpiezas Espirituales.&nbsp;</b></h3>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><b>Nuestros expertos pueden ayudarte a limpiar tu energía y liberarte de los bloqueos emocionales y espirituales que te impiden avanzar. Te ayudamos a encontrar un mayor sentido de bienestar y equilibrio</b></h1>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR AHORA!</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img class=\"image-absolute\" src=\"@PROJECT_PATH@/assets/images/limpias-54-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                    <img src=\"@PROJECT_PATH@/assets/images/limpias-54-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_isUserblock": true,
+          "_cid": "tHAuSjUKPM",
+          "_anchor": "header3-m",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "padding": "0",
+                "@media (max-width: 992px)": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".container": {
+              "@media (max-width: 992px)": {
+                "padding": "0"
+              }
+            },
+            ".title-wrapper": {
+              "padding": "0 16px",
+              ".mbr-section-title": {
+                "margin-bottom": "0"
+              },
+              ".mbr-text": {
+                "margin": "25px 0 0 0"
+              },
+              ".mbr-section-btn": {
+                "margin-top": "100px",
+                "@media (max-width: 992px)": {
+                  "margin-top": "40px"
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-section-title, .mbr-section-btn": {
+              "text-align": "center",
+              "color": "#18ddf3"
+            }
+          },
+          "_name": "header1",
+          "_sourceTheme": "churchm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1 churchm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/limpias%20(226)-512x512.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/293747805\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/churchm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"title-wrapper\">\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>MAESTROS PODEROSOS\n</b><div><b><br></b></div></h1>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Usted no tendrá ningún riesgo al hacer este tipo de ritual, somos un grupo de poderosos santeros y chamanes con más de 40 años de experiencia.&nbsp;</p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR AHORA!&nbsp;</a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tHAuSk8X6h",
+          "_anchor": "header1-n",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".text": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "margin": "0 0 22px 0",
+              "letter-spacing": ".13em",
+              "color": "#18ddf3"
+            },
+            ".mbr-section-title": {
+              "margin": "0 0 33px 0",
+              "color": "#ffffff"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".image-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "@media (max-width: 992px)": {
+                "margin-top": "2rem"
+              },
+              "img": {
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              },
+              ".image-absolute": {
+                "position": "absolute",
+                "top": "20px",
+                "right": "23%",
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                },
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "@media (max-width: 425px)": {
+                  "display": "none"
+                }
+              }
+            },
+            ".row:hover img": {
+              "transform": "rotate(0deg)"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Header\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#18ddf3\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/limpias-135-512x512.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#000000\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6 col-md-12 text\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>Regeneración Interna</b><br><div><b><br></b></div></h3>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><div><b>Sana tus relaciones con la limpieza espiritual.\n</b></div><div><b>Protege tu energía y mantén tu bienestar espiritual con nuestros consejos y técnicas.</b></div><div><b>\n</b></div></h1>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTARAHORA!</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img class=\"image-absolute\" src=\"@PROJECT_PATH@/assets/images/limpias-135-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                    <img src=\"@PROJECT_PATH@/assets/images/limpias-135-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_isUserblock": true,
+          "_cid": "tHAuSkldNH",
+          "_anchor": "header3-o",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".text": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "margin": "0 0 22px 0",
+              "letter-spacing": ".13em",
+              "color": "#18ddf3"
+            },
+            ".mbr-section-title": {
+              "margin": "0 0 33px 0",
+              "color": "#ffffff"
+            },
+            ".btn": {
+              "height": "55px",
+              "min-width": "170px",
+              "box-shadow": "none",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            ".image-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "@media (max-width: 992px)": {
+                "margin-top": "2rem"
+              },
+              "img": {
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              },
+              ".image-absolute": {
+                "position": "absolute",
+                "top": "20px",
+                "right": "23%",
+                "width": "372px",
+                "height": "427px",
+                "object-fit": "cover",
+                "transform": "rotate(5deg)",
+                "transition": "all .4s ease",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                },
+                "@media (max-width: 992px)": {
+                  "transform": "none"
+                },
+                "@media (max-width: 768px)": {
+                  "width": "240px",
+                  "height": "275px"
+                },
+                "@media (max-width: 425px)": {
+                  "display": "none"
+                }
+              }
+            },
+            ".row:hover img": {
+              "transform": "rotate(0deg)"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "parkm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Header\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#18ddf3\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/amor-139-resultado-512x512.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6 col-md-12 text\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>Sanación Holística</b></h3>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><b>Despertar de la consciencia: Mediante la sanación holística, facilitamos un despertar de la consciencia y la conexión con tu ser interior. Te guiamos en un camino de autodescubrimiento y crecimiento espiritual.</b></h1>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>CONTACTAR AHORA!</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img class=\"image-absolute\" src=\"@PROJECT_PATH@/assets/images/limpias-231-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                    <img src=\"@PROJECT_PATH@/assets/images/limpias-231-512x512.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_isUserblock": true,
+          "_cid": "tHAuSkzfoe",
+          "_anchor": "header3-p",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
